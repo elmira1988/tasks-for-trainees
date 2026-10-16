@@ -1,0 +1,6 @@
+env-docker/.env
+env-docker/.env_*
+env-docker/mysql_lib_data/
+env-docker/postgres_data/
+env-docker/redis_data/
+env-docker/sources/
