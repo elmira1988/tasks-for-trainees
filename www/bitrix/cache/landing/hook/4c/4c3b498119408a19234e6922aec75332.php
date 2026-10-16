@@ -1,0 +1,7 @@
+<?
+if($INCLUDE_FROM_CACHE!='Y')return false;
+$datecreate = '001792139590';
+$dateexpire = '001794731590';
+$ser_content = 'a:2:{s:7:"CONTENT";s:0:"";s:4:"VARS";a:1:{i:0;a:14:{s:10:"THEMEFONTS";a:9:{s:4:"SIZE";s:1:"1";s:11:"LINE_HEIGHT";s:3:"1.6";s:3:"USE";s:1:"N";s:6:"CODE_H";s:9:"Open Sans";s:4:"CODE";s:9:"Open Sans";s:5:"COLOR";s:7:"#999999";s:7:"COLOR_H";s:7:"#111111";s:11:"FONT_WEIGHT";s:3:"400";s:13:"FONT_WEIGHT_H";s:3:"400";}s:6:"METAOG";a:3:{s:5:"TITLE";s:29:"Пустая страница";s:11:"DESCRIPTION";s:121:"Создайте собственный сайт с чистого листа и привлекайте клиентов!";s:5:"IMAGE";s:67:"https://cdn.bitrix24.site/bitrix/images/demo/page/empty/preview.jpg";}s:5:"THEME";a:2:{s:3:"USE";s:1:"N";s:5:"COLOR";s:7:"#4fd2c2";}s:8:"METAMAIN";a:3:{s:5:"TITLE";s:29:"Пустая страница";s:11:"DESCRIPTION";s:121:"Создайте собственный сайт с чистого листа и привлекайте клиентов!";s:3:"USE";s:1:"N";}s:7:"PIXELVK";a:1:{s:3:"USE";s:1:"N";}s:10:"METAROBOTS";a:1:{s:5:"INDEX";s:1:"Y";}s:9:"B24BUTTON";a:4:{s:3:"USE";s:1:"N";s:4:"CODE";s:1:"N";s:5:"COLOR";s:4:"site";s:11:"COLOR_VALUE";s:7:"#03c1fe";}s:9:"GACOUNTER";a:3:{s:3:"USE";s:1:"N";s:10:"CLICK_TYPE";s:4:"text";s:9:"SEND_SHOW";s:1:"N";}s:3:"GTM";a:1:{s:3:"USE";s:1:"N";}s:4:"VIEW";a:2:{s:3:"USE";s:1:"N";s:4:"TYPE";s:2:"no";}s:9:"YACOUNTER";a:1:{s:3:"USE";s:1:"N";}s:9:"HEADBLOCK";a:1:{s:3:"USE";s:1:"N";}s:8:"CSSBLOCK";a:1:{s:3:"USE";s:1:"N";}s:10:"BACKGROUND";a:3:{s:3:"USE";s:1:"N";s:8:"POSITION";s:6:"center";s:5:"COLOR";s:7:"#ffffff";}}}}';
+return true;
+?>

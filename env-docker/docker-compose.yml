@@ -202,7 +202,7 @@ services:
       #- ./confs/php83/etc/:/usr/local/etc/
       #- ./confs/php84/etc/:/usr/local/etc/
       #- ./confs/php85/etc/:/usr/local/etc/
-      - www_data:/opt/www/
+      - ../www:/opt/www/
       - bxtemp_data:/opt/.bx_temp/
       - msmtp_data:/opt/msmtp/
       - browscap_data:/opt/browscap/
@@ -242,7 +242,7 @@ services:
       - "8589:443"
     volumes:
       - ./confs/nginx/:/etc/nginx/
-      - www_data:/opt/www/
+      - ../www:/opt/www/
       - bxtemp_data:/opt/.bx_temp/
       - ssl_data:/ssl/
     init: true
@@ -388,7 +388,7 @@ services:
       #- ./confs/php83/etc/:/usr/local/etc/
       #- ./confs/php84/etc/:/usr/local/etc/
       #- ./confs/php85/etc/:/usr/local/etc/
-      - www_data:/opt/www/
+      - ../www:/opt/www/
       - bxtemp_data:/opt/.bx_temp/
       - msmtp_data:/opt/msmtp/
       - browscap_data:/opt/browscap/

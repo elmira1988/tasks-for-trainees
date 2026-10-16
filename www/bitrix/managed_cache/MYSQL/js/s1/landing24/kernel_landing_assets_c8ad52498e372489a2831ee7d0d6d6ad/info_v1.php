@@ -1,0 +1,1 @@
+<?php $filesInfo = ["/bitrix/templates/landing24/assets/js/helpers/onscroll-animation_init.js" => "17919695033648","/bitrix/js/landing/ui/tool/auto_font_scale/dist/auto_font_scale.bundle.js" => "17919695015160","/bitrix/templates/landing24/assets/js/helpers/auto_font_scale_init.js" => "1791969503150",]; ?>

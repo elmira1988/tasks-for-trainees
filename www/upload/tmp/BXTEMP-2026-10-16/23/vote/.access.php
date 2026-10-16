@@ -1,0 +1,1 @@
+<?$PERM["grid_answer"]["*"]="X";?>

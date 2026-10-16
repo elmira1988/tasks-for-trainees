@@ -1,0 +1,1 @@
+<?php $filesInfo = ["/bitrix/components/bitrix/ui.toolbar/templates/.default/dist/ui.toolbar.bundle.css" => "17919695439312","/bitrix/components/bitrix/system.show_message/templates/.default/style.css" => "179196945751",]; ?>

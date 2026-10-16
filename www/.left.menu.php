@@ -1,0 +1,25 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Услуги", 
+		"/services/index.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Консультация", 
+		"/services/consultation.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Аудит", 
+		"/services/audit.php", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

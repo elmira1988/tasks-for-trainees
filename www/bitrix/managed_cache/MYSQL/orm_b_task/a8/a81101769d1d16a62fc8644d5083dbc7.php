@@ -1,0 +1,7 @@
+<?
+if($INCLUDE_FROM_CACHE!='Y')return false;
+$datecreate = '001791986504';
+$dateexpire = '001791990104';
+$ser_content = 'a:2:{s:7:"CONTENT";s:0:"";s:4:"VARS";a:6:{i:0;a:7:{s:2:"ID";s:2:"38";s:4:"NAME";s:15:"medialib_denied";s:6:"LETTER";s:1:"D";s:9:"MODULE_ID";s:7:"fileman";s:3:"SYS";s:1:"Y";s:11:"DESCRIPTION";N;s:7:"BINDING";s:8:"medialib";}i:1;a:7:{s:2:"ID";s:2:"39";s:4:"NAME";s:13:"medialib_view";s:6:"LETTER";s:1:"F";s:9:"MODULE_ID";s:7:"fileman";s:3:"SYS";s:1:"Y";s:11:"DESCRIPTION";N;s:7:"BINDING";s:8:"medialib";}i:2;a:7:{s:2:"ID";s:2:"40";s:4:"NAME";s:17:"medialib_only_new";s:6:"LETTER";s:1:"R";s:9:"MODULE_ID";s:7:"fileman";s:3:"SYS";s:1:"Y";s:11:"DESCRIPTION";N;s:7:"BINDING";s:8:"medialib";}i:3;a:7:{s:2:"ID";s:2:"41";s:4:"NAME";s:19:"medialib_edit_items";s:6:"LETTER";s:1:"V";s:9:"MODULE_ID";s:7:"fileman";s:3:"SYS";s:1:"Y";s:11:"DESCRIPTION";N;s:7:"BINDING";s:8:"medialib";}i:4;a:7:{s:2:"ID";s:2:"42";s:4:"NAME";s:15:"medialib_editor";s:6:"LETTER";s:1:"W";s:9:"MODULE_ID";s:7:"fileman";s:3:"SYS";s:1:"Y";s:11:"DESCRIPTION";N;s:7:"BINDING";s:8:"medialib";}i:5;a:7:{s:2:"ID";s:2:"43";s:4:"NAME";s:13:"medialib_full";s:6:"LETTER";s:1:"X";s:9:"MODULE_ID";s:7:"fileman";s:3:"SYS";s:1:"Y";s:11:"DESCRIPTION";N;s:7:"BINDING";s:8:"medialib";}}}';
+return true;
+?>
