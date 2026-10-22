@@ -46,7 +46,7 @@
 		<h2>Новости</h2>
 		<?$APPLICATION->IncludeComponent(
 	"bitrix:news.list", 
-	"bootstrap_v4", 
+	"main_news", 
 	[
 		"IBLOCK_TYPE" => "news",
 		"IBLOCK_ID" => "1",
@@ -94,7 +94,7 @@
 		"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000000",
 		"PAGER_SHOW_ALL" => "N",
 		"AJAX_OPTION_ADDITIONAL" => "",
-		"COMPONENT_TEMPLATE" => "bootstrap_v4",
+		"COMPONENT_TEMPLATE" => "main_news",
 		"SET_BROWSER_TITLE" => "Y",
 		"SET_META_KEYWORDS" => "Y",
 		"SET_META_DESCRIPTION" => "Y",

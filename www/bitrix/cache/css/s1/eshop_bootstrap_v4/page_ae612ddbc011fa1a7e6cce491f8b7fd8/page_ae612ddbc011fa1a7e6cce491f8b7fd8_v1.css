@@ -1,0 +1,233 @@
+
+
+/* Start:/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/style.css?17926557158057*/
+/* ==========================================================================
+   1. ПОДКЛЮЧЕНИЕ ШРИФТОВ GILROY И GOTHAM
+   ========================================================================== */
+@font-face {
+    font-family: Gilroy;
+    src: url(/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Bold.woff2) format("woff2"), url(/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Bold.woff) format("woff"), url(/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Bold.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Extrabold.woff2) format("woff2"), url(/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Extrabold.woff) format("woff"), url(/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Extrabold.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Medium.woff2) format("woff2"), url(/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Medium.woff) format("woff"), url(/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Medium.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Regular.woff2) format("woff2"), url(/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Regular.woff) format("woff"), url(/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Regular.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Light.woff2) format("woff2"), url(/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Light.woff) format("woff"), url(/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Light.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap
+}
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url(/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/GothamPro.woff2) format("woff2"), url(/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/GothamPro.woff) format("woff"), url(/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/GothamPro.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap
+}
+
+/* ==========================================================================
+   2. СБРОС И СЕТКА КАРТОЧЕК (Изолировано под .build_custom_articles)
+   ========================================================================== */
+.build_custom_articles *,
+.build_custom_articles :after,
+.build_custom_articles :before {
+    box-sizing: border-box;
+}
+
+.build_custom_articles .article-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Элемент списка (колонка сетки) */
+.build_custom_articles .article-list__item {
+    position: relative;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/* Сама карточка */
+.build_custom_articles .article-item {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start; /* Текст начинается сверху, как на макете */
+    align-items: flex-start;
+    min-height: 330px;
+    margin-bottom: 30px;
+    padding: 40px;
+    box-shadow: 0 10px 50px rgba(0,0,0,.05);
+    color: #172c5f;
+    letter-spacing: .1px;
+    background-color: #fff;
+    text-decoration: none !important;
+}
+
+.build_custom_articles .article-item:active,
+.build_custom_articles .article-item:focus,
+.build_custom_articles .article-item:hover {
+    color: #172c5f;
+}
+
+.build_custom_articles .article-item__wrapper {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+.build_custom_articles .article-item__title {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+    z-index: 1;
+    color: #172c5f;
+}
+
+.build_custom_articles .article-item__content {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: .3px;
+    font-weight: 400;
+    color: #172c5f;
+    max-width: 90%; /* Чтобы текст не прижимался к правому краю */
+}
+
+/* Контейнер картинки */
+.build_custom_articles .article-item__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+
+/* Сама картинка фона */
+.build_custom_articles .article-item__background img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0 !important; /* Изначально полностью прозрачная, как на макете */
+    transition: transform 1.3s cubic-bezier(.165,.84,.44,1), opacity .6s linear;
+}
+
+/* ==========================================================================
+   3. КОНТЕЙНЕРНЫЕ ЗАПРОСЫ (Расчет от ширины родительского блока)
+   ========================================================================== */
+
+/* Объявляем нашу обертку как контейнер, за шириной которого нужно следить */
+.build_custom_articles {
+    container-type: inline-size;
+    container-name: newsGrid;
+    width: 100%;
+}
+
+/* Базовые стили для карточки, если контейнер УЗКИЙ (меньше 700px) */
+/* В этом режиме карточки автоматически встают в одну колонку на 100% ширины */
+.build_custom_articles .article-list__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    top: 0 !important;
+}
+.build_custom_articles .article-item {
+    min-height: 300px;
+    margin-bottom: 25px;
+    padding: 30px;
+}
+.build_custom_articles .article-item__title {
+    font-size: 26px !important; /* Уменьшенный аккуратный шрифт */
+}
+.build_custom_articles .article-item__content {
+    font-size: 16px !important;
+}
+
+
+/* ЕСЛИ ШИРИНА ВНУТРЕННЕЙ ЗОНЫ СТАЛА БОЛЬШЕ 700px */
+/* (Например, скрыли сайдбар или открыли сайт на огромном мониторе) */
+@container newsGrid (min-width: 700px) {
+    .build_custom_articles .article-list__item {
+        flex: 0 0 calc(50% - 15px); /* Делим ровно на 2 колонки внутри блока */
+        max-width: calc(50% - 15px);
+    }
+
+    /* Возвращаем шахматный сдвиг, так как места теперь много */
+    .build_custom_articles .article-list__item:nth-of-type(2n) {
+        top: 60px;
+    }
+    .build_custom_articles .article-list__item:last-of-type:nth-of-type(2n) {
+        margin-bottom: 60px;
+    }
+
+    /* Увеличиваем высоту карточек и размеры шрифтов */
+    .build_custom_articles .article-item {
+        min-height: 450px;
+        padding: 50px;
+    }
+    .build_custom_articles .article-item__title {
+        font-size: 36px !important; /* Шрифты увеличились пропорционально блоку */
+    }
+    .build_custom_articles .article-item__content {
+        font-size: 20px !important;
+    }
+}
+
+
+/* ЕСЛИ ШИРИНА ВНУТРЕННЕЙ ЗОНЫ СТАЛА ОЧЕНЬ БОЛЬШЕЙ (больше 1100px) */
+@container newsGrid (min-width: 1100px) {
+    .build_custom_articles .article-item {
+        min-height: 520px;
+        padding: 70px 80px;
+    }
+    .build_custom_articles .article-item__title {
+        font-size: 44px !important; /* Максимальный размер шрифта для просторного блока */
+    }
+    .build_custom_articles .article-item__content {
+        font-size: 24px !important;
+    }
+    .build_custom_articles .article-list__item:nth-of-type(2n) {
+        top: 120px;
+    }
+    .build_custom_articles .article-list__item:last-of-type:nth-of-type(2n) {
+        margin-bottom: 120px;
+    }
+}
+
+/* End */
+/* /bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/style.css?17926557158057 */

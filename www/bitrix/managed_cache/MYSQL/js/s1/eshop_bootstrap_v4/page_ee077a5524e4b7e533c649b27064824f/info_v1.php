@@ -1,1 +1,0 @@
-<?php $filesInfo = ["/bitrix/components/bitrix/calendar.grid/templates/.default/script.js" => "179196946759","/bitrix/components/bitrix/ui.toolbar/templates/.default/dist/ui.toolbar.bundle.js" => "179196954315169",]; ?>

@@ -1,1 +1,0 @@
-<?php $filesInfo = ["/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js" => "17919694577124","/bitrix/templates/landing24/assets/js/helpers/lazyload.js" => "17919695032187",]; ?>

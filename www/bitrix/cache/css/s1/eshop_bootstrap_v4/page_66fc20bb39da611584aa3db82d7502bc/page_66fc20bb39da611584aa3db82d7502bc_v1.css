@@ -1,0 +1,83 @@
+
+
+/* Start:/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/style.css?17926538202517*/
+/* ==========================================================================
+   1. ПОДКЛЮЧЕНИЕ ШРИФТОВ GILROY (Пути ./fonts/ так как папка fonts лежит рядом)
+   ========================================================================== */
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Bold.woff2') format('woff2'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Bold.woff') format('woff'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Extrabold.woff2') format('woff2'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Extrabold.woff') format('woff'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Extrabold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Medium.woff2') format('woff2'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Medium.woff') format('woff'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Medium.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Regular.woff2') format('woff2'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Regular.woff') format('woff'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Light.woff2') format('woff2'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Light.woff') format('woff'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+}
+
+/* ==========================================================================
+   2. ИЗОЛЯЦИЯ БАЗОВЫХ ПРАВИЛ И СЕТКИ ПОД КЛАСС .build_custom_articles
+   ========================================================================== */
+.build_custom_articles *,
+.build_custom_articles :after,
+.build_custom_articles :before {
+    box-sizing: border-box;
+}
+
+.build_custom_articles img {
+    border-style: none;
+    vertical-align: middle;
+}
+
+/* Принудительно задаем шрифт элементам внутри вашей обертки */
+.build_custom_articles .article-item__title {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 700;
+}
+
+.build_custom_articles .article-item__content {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+}
+
+/* End */
+/* /bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/style.css?17926538202517 */

@@ -1,0 +1,227 @@
+
+
+/* Start:/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/style.css?17926609657906*/
+/* ==========================================================================
+   1. ШРИФТЫ GILROY И GOTHAM PRO (Оставляем на верхнем уровне файла)
+   ========================================================================== */
+@font-face {
+    font-family: Gilroy;
+    src: url(/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/../fonts/Gilroy-Bold.woff2) format("woff2"),
+    url(/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/../fonts/Gilroy-Bold.woff) format("woff"),
+    url(/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/../fonts/Gilroy-Bold.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/../fonts/Gilroy-Extrabold.woff2) format("woff2"),
+    url(/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/../fonts/Gilroy-Extrabold.woff) format("woff"),
+    url(/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/../fonts/Gilroy-Extrabold.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/../fonts/Gilroy-Medium.woff2) format("woff2"),
+    url(/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/../fonts/Gilroy-Medium.woff) format("woff"),
+    url(/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/../fonts/Gilroy-Medium.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/../fonts/Gilroy-Regular.woff2) format("woff2"),
+    url(/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/../fonts/Gilroy-Regular.woff) format("woff"),
+    url(/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/../fonts/Gilroy-Regular.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/../fonts/Gilroy-Light.woff2) format("woff2"),
+    url(/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/../fonts/Gilroy-Light.woff) format("woff"),
+    url(/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/../fonts/Gilroy-Light.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url(/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/../fonts/GothamPro.woff2) format("woff2"),
+    url(/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/../fonts/GothamPro.woff) format("woff"),
+    url(/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/../fonts/GothamPro.ttf) format("truetype");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+/* ==========================================================================
+   2. ПОЛНАЯ ИЗОЛЯЦИЯ СТИЛЕЙ НОВОСТЕЙ ВНУТРИ ВАШЕГО УНИКАЛЬНОГО ID
+   ========================================================================== */
+
+/* Замените #barba-wrapper на ваш реальный внешний ID */
+#barba-wrapper {
+    /* Превращаем ваш блок в изолированный CSS-контейнер */
+    container-type: inline-size;
+    container-name: newsIsolatedGrid;
+    width: 100%;
+}
+
+/* Принудительно возвращаем контенту Битрикса 75% ширины, отменяя конфликт */
+.bx-content-section div.bx-content.col-md-9 {
+    flex: 0 0 75% !important;
+    max-width: 75% !important;
+}
+
+/* Главный контейнер списка */
+#barba-wrapper .article-list {
+    display: flex !important;
+    flex-flow: row wrap !important;
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+    width: 100% !important;
+}
+
+/* Ссылка-карточка (Базовое поведение) */
+#barba-wrapper .article-item {
+    position: relative;
+    display: flex !important;
+    flex-flow: column nowrap !important;
+    justify-content: flex-end !important;
+    align-items: stretch !important;
+    box-shadow: 0 10px 50px rgba(0,0,0,.05) !important;
+    color: #172c5f !important;
+    letter-spacing: .1px !important;
+    background-color: #fff !important;
+    text-decoration: none !important;
+}
+
+#barba-wrapper .article-item:active,
+#barba-wrapper .article-item:focus,
+#barba-wrapper .article-item:hover {
+    color: #172c5f !important;
+    text-decoration: none !important;
+}
+
+/* Внутренний контейнер для текстов */
+#barba-wrapper .article-item__wrapper {
+    position: relative;
+    z-index: 2;
+    display: flex !important;
+    flex-flow: column nowrap !important;
+    justify-content: flex-start !important;
+    align-items: stretch !important;
+    flex: 0 0 100% !important;
+}
+
+/* Заголовок новости */
+#barba-wrapper .article-item__title {
+    position: relative;
+    font-family: 'Gilroy', sans-serif !important;
+    z-index: 1;
+    line-height: 1.5 !important;
+    letter-spacing: 1.5px !important;
+}
+
+/* Текст анонса */
+#barba-wrapper .article-item__content {
+    font-family: 'Gilroy', sans-serif !important;
+    line-height: 1.7 !important;
+    letter-spacing: .3px !important;
+}
+
+/* Контейнер картинки */
+#barba-wrapper .article-item__background {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+
+/* Фоновое изображение */
+#barba-wrapper .article-item__background img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0 !important; /* Скрыта изначально, как в оригинале */
+    transition: transform 1.3s cubic-bezier(.165,.84,.44,1), opacity .6s linear !important;
+}
+
+/* Плавное проявление картинки и её увеличение при наведении */
+#barba-wrapper .article-item:hover .article-item__background img {
+    opacity: 1 !important;
+    transform: scale(1.1) !important;
+}
+
+/* ==========================================================================
+   3. УНИВЕРСАЛЬНАЯ АВТО-СЕТКА ОТ ШИРИНЫ ВАШЕГО ID (Вместо ломающих @media)
+   ========================================================================== */
+
+/* РЕЖИМ 1: Места внутри вашего ID МАЛО (меньше 760px из-за правого сайдбара) */
+/* Новости встают в 1 аккуратную колонку, текст расправляется, наезд исчезает */
+@container newsIsolatedGrid (max-width: 759px) {
+    #barba-wrapper .article-list__item {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        top: 0 !important; /* Сбрасываем шахматный сдвиг */
+    }
+    #barba-wrapper .article-item {
+        min-height: 250px !important;
+        margin-bottom: 25px !important;
+        padding: 30px !important;
+    }
+    #barba-wrapper .article-item__title {
+        font-size: 26px !important;
+        margin-bottom: 15px !important;
+    }
+    #barba-wrapper .article-item__content {
+        font-size: 16px !important;
+        font-weight: 300 !important;
+    }
+}
+
+/* РЕЖИМ 2: Места внутри вашего ID МНОГО (больше 760px, если уберут сайдбар) */
+/* Сетка автоматически включает оригинальные 2 колонки с шахматным сдвигом */
+@container newsIsolatedGrid (min-width: 760px) {
+    #barba-wrapper .article-list__item {
+        flex: 0 0 calc(50% - 20px) !important;
+        max-width: calc(50% - 20px) !important;
+    }
+
+    /* Тот самый оригинальный вертикальный сдвиг чётных карточек */
+    #barba-wrapper .article-list__item:nth-of-type(2n) {
+        top: 50px !important;
+    }
+    #barba-wrapper .article-list__item:last-of-type:nth-of-type(2n) {
+        margin-bottom: 100px !important;
+    }
+
+    #barba-wrapper .article-item {
+        min-height: 520px !important;
+        margin-bottom: 100px !important;
+        padding: 78px 86px 68px !important;
+    }
+
+    #barba-wrapper .article-item__title {
+        font-size: 47px !important;
+        font-weight: 700 !important;
+    }
+
+    #barba-wrapper .article-item__content {
+        font-size: 25px !important;
+        font-weight: 300 !important;
+    }
+}
+
+/* End */
+/* /bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/style.css?17926609657906 */

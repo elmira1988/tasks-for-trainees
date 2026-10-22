@@ -1,1 +1,0 @@
-<?php $filesInfo = ["/bitrix/components/bitrix/learning.course.tree/templates/.default/script.js" => "1791969504690",]; ?>

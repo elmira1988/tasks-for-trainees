@@ -1,0 +1,207 @@
+
+
+/* Start:/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/style.css?17926619656800*/
+@charset "utf-8";
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Bold.woff2') format('woff2'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Bold.woff') format('woff'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Extrabold.woff2') format('woff2'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Extrabold.woff') format('woff'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Extrabold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Medium.woff2') format('woff2'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Medium.woff') format('woff'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Medium.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Regular.woff2') format('woff2'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Regular.woff') format('woff'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Light.woff2') format('woff2'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Light.woff') format('woff'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/GothamPro.woff2') format('woff2'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/GothamPro.woff') format('woff'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/GothamPro.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+
+#barba-wrapper .article-list {
+    display: flex !important;
+    flex-flow: row wrap !important;
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+    width: 100% !important;
+}
+
+/* Мобильный режим по умолчанию (одна колонка) */
+#barba-wrapper .article-list__item {
+    position: relative !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    top: 0 !important;
+}
+
+#barba-wrapper .article-item {
+    position: relative;
+    display: flex !important;
+    flex-flow: column nowrap !important;
+    justify-content: flex-end !important;
+    align-items: flex-start !important;
+    min-height: 320px !important;
+    margin-bottom: 30px !important;
+    padding: 35px !important;
+    box-shadow: 0 10px 50px rgba(0,0,0,.05) !important;
+    color: #172c5f !important;
+    background-color: #fff !important;
+    text-decoration: none !important;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#barba-wrapper .article-item:active,
+#barba-wrapper .article-item:focus,
+#barba-wrapper .article-item:hover {
+    color: #172c5f !important;
+    text-decoration: none !important;
+}
+
+#barba-wrapper .article-item__wrapper {
+    position: relative;
+    z-index: 2;
+    display: flex !important;
+    flex-flow: column nowrap !important;
+    width: 100% !important;
+}
+
+/* Стабильные 28px для предотвращения наложения букв */
+#barba-wrapper .article-item__title {
+    position: relative;
+    margin-top: 0 !important;
+    margin-bottom: 15px !important;
+    font-family: 'Gilroy', sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 28px !important;
+    line-height: 1.3 !important;
+    letter-spacing: 0.5px !important;
+    color: #172c5f !important;
+    z-index: 1;
+}
+
+/* Стабильные 16px для текста анонса */
+#barba-wrapper .article-item__content {
+    font-family: 'Gilroy', sans-serif !important;
+    font-size: 16px !important;
+    line-height: 1.5 !important;
+    letter-spacing: .3px !important;
+    font-weight: 400 !important;
+    color: #172c5f !important;
+}
+
+#barba-wrapper .article-item__background {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#barba-wrapper .article-item__background img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4 !important; /* Легкая видимость изначально, чтобы фон не был белым */
+    transition: transform 1.3s cubic-bezier(.165,.84,.44,1), opacity .6s linear !important;
+}
+
+/* Эффект плавного проявления и увеличения при наведении */
+#barba-wrapper .article-item:hover .article-item__background img {
+    opacity: 1 !important;
+    transform: scale(1.08) !important;
+}
+
+/* ==========================================================================
+   4. ДЕСКТОПНЫЙ РЕЖИМ (Родная двухколоночная шахматка от 1200px)
+   ========================================================================== */
+@media (min-width: 1200px) {
+    /* Делим строку ровно пополам от доступного контента Битрикса */
+    #barba-wrapper .article-list__item {
+        flex: 0 0 calc(50% - 20px) !important;
+        max-width: calc(50% - 20px) !important;
+    }
+
+    /* Возвращаем оригинальный шахматный вертикальный сдвиг четных карточек */
+    #barba-wrapper .article-list__item:nth-of-type(2n) {
+        top: 50px !important;
+    }
+
+    /* Компенсируем нижний отступ последней сдвинутой карточки */
+    #barba-wrapper .article-list__item:last-of-type:nth-of-type(2n) {
+        margin-bottom: 100px !important;
+    }
+
+    #barba-wrapper .article-item {
+        min-height: 460px !important; /* Оптимальная высота на десктопе */
+        padding: 50px 60px !important;
+    }
+
+    /* Пропорционально увеличиваем шрифты для больших экранов */
+    #barba-wrapper .article-item__title {
+        font-size: 38px !important;
+    }
+
+    #barba-wrapper .article-item__content {
+        font-size: 18px !important;
+    }
+}
+
+/* Специфический зазор для очень широких экранов */
+@media (min-width: 1440px) {
+    #barba-wrapper .article-list__item:nth-of-type(2n) {
+        top: 80px !important; /* Умеренный сдвиг, адаптированный под узкий контейнер */
+    }
+    #barba-wrapper .article-list__item:last-of-type:nth-of-type(2n) {
+        margin-bottom: 140px !important;
+    }
+}
+
+/* End */
+/* /bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/style.css?17926619656800 */

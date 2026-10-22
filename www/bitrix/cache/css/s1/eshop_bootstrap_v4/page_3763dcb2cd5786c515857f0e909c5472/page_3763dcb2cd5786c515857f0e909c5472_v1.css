@@ -1,0 +1,77 @@
+
+
+/* Start:/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/style.css?17926623351987*/
+@charset "utf-8";
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Bold.woff2') format('woff2'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Bold.woff') format('woff'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Extrabold.woff2') format('woff2'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Extrabold.woff') format('woff'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Extrabold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Medium.woff2') format('woff2'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Medium.woff') format('woff'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Medium.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Regular.woff2') format('woff2'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Regular.woff') format('woff'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Light.woff2') format('woff2'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Light.woff') format('woff'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/GothamPro.woff2') format('woff2'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/GothamPro.woff') format('woff'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/GothamPro.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+.article-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start
+}
+
+.article-list__item {
+    position: relative;
+    flex: 0 0 100%
+}
+/* End */
+/* /bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/style.css?17926623351987 */

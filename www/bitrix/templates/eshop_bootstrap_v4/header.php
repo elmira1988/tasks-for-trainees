@@ -217,5 +217,6 @@ $curPage = $APPLICATION->GetCurPage(true);
 	<div class="workarea">
 		<div class="container bx-content-section">
 			<div class="row">
-			<?$needSidebar = preg_match("~^".SITE_DIR."(catalog|personal\/cart|personal\/order\/make)/~", $curPage);?>
+			<?$needSidebar = preg_match("~^".SITE_DIR."(catalog|personal\/cart|personal\/order\/make|news)/~", $curPage);?>
+
 				<div class="bx-content <?=($needSidebar ? "col" : "col-md-9 col-sm-8")?>">

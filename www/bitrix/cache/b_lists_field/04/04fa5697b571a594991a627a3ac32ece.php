@@ -1,7 +1,0 @@
-<?
-if($INCLUDE_FROM_CACHE!='Y')return false;
-$datecreate = '001792142401';
-$dateexpire = '001792178401';
-$ser_content = 'a:2:{s:7:"CONTENT";s:0:"";s:4:"VARS";a:4:{s:4:"NAME";a:5:{s:9:"IBLOCK_ID";s:1:"5";s:8:"FIELD_ID";s:4:"NAME";s:4:"SORT";s:2:"10";s:4:"NAME";s:16:"Название";s:8:"SETTINGS";N;}s:11:"PROPERTY_26";a:5:{s:9:"IBLOCK_ID";s:1:"5";s:8:"FIELD_ID";s:11:"PROPERTY_26";s:4:"SORT";s:2:"20";s:4:"NAME";s:18:"Должность";s:8:"SETTINGS";s:170:"a:5:{s:13:"SHOW_ADD_FORM";s:1:"Y";s:14:"SHOW_EDIT_FORM";s:1:"Y";s:19:"ADD_READ_ONLY_FIELD";s:1:"N";s:20:"EDIT_READ_ONLY_FIELD";s:1:"N";s:18:"SHOW_FIELD_PREVIEW";s:1:"N";}";}s:11:"PROPERTY_27";a:5:{s:9:"IBLOCK_ID";s:1:"5";s:8:"FIELD_ID";s:11:"PROPERTY_27";s:4:"SORT";s:2:"30";s:4:"NAME";s:14:"Телефон";s:8:"SETTINGS";s:170:"a:5:{s:13:"SHOW_ADD_FORM";s:1:"Y";s:14:"SHOW_EDIT_FORM";s:1:"Y";s:19:"ADD_READ_ONLY_FIELD";s:1:"N";s:20:"EDIT_READ_ONLY_FIELD";s:1:"N";s:18:"SHOW_FIELD_PREVIEW";s:1:"N";}";}s:11:"PROPERTY_28";a:5:{s:9:"IBLOCK_ID";s:1:"5";s:8:"FIELD_ID";s:11:"PROPERTY_28";s:4:"SORT";s:2:"40";s:4:"NAME";s:5:"Email";s:8:"SETTINGS";s:170:"a:5:{s:13:"SHOW_ADD_FORM";s:1:"Y";s:14:"SHOW_EDIT_FORM";s:1:"Y";s:19:"ADD_READ_ONLY_FIELD";s:1:"N";s:20:"EDIT_READ_ONLY_FIELD";s:1:"N";s:18:"SHOW_FIELD_PREVIEW";s:1:"N";}";}}}';
-return true;
-?>

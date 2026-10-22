@@ -1,0 +1,127 @@
+
+
+/* Start:/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/style.css?17926621074221*/
+@charset "utf-8";
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Bold.woff2') format('woff2'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Bold.woff') format('woff'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Bold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Extrabold.woff2') format('woff2'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Extrabold.woff') format('woff'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Extrabold.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Medium.woff2') format('woff2'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Medium.woff') format('woff'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Medium.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Regular.woff2') format('woff2'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Regular.woff') format('woff'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Light.woff2') format('woff2'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Light.woff') format('woff'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/Gilroy-Light.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/GothamPro.woff2') format('woff2'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/GothamPro.woff') format('woff'),
+    url('/bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/./fonts/GothamPro.ttf') format('truetype');
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+/* ==========================================================================
+   КОД ШАХМАТНОЙ СЕТКИ И МЕДИА-ЗАПРОСОВ (Оригинал из верстки)
+   ========================================================================== */
+
+/* Базовое поведение (Мобильные устройства): карточки идут в 1 колонку */
+#barba-wrapper .article-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#barba-wrapper .article-list__item {
+    position: relative;
+    flex: 0 0 100%;
+}
+
+/* На больших экранах (от 1200px) — перестраиваем в 2 колонки и включаем сдвиг */
+@media (min-width: 1200px) {
+    #barba-wrapper .article-list__item {
+        /* Рассчитываем ширину карточек в 2 колонки с учетом зазоров */
+        flex: 0 0 calc(50% - 2.08333vw) !important;
+        max-width: calc(50% - 2.08333vw) !important;
+    }
+
+    #barba-wrapper .is-ie .article-list__item {
+        flex: 0 1 50%;
+        max-width: calc(50% - 2.08333vw) !important;
+    }
+
+    /* ШАХМАТКА: Смещаем каждую вторую (правую) карточку вниз на 50px */
+    #barba-wrapper .article-list__item:nth-of-type(2n) {
+        position: relative !important;
+        top: 50px !important;
+    }
+
+    /* Компенсируем нижний отступ, чтобы футер не наезжал на сдвинутый элемент */
+    #barba-wrapper .article-list__item:last-of-type:nth-of-type(2n) {
+        margin-bottom: 100px !important;
+    }
+}
+
+/* На экранах от 1440px — увеличиваем вертикальный сдвиг шахматки */
+@media (min-width: 1440px) {
+    #barba-wrapper .article-list__item:nth-of-type(2n) {
+        top: 218px !important; /* Родной глубокий сдвиг колонок */
+    }
+
+    #barba-wrapper .article-list__item:last-of-type:nth-of-type(2n) {
+        margin-bottom: 319px !important;
+    }
+}
+
+/* Медиа-запрос для мобильного сброса отступов */
+@media (max-width: 567.98px) {
+    #barba-wrapper .article-list {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+}
+
+/* End */
+/* /bitrix/templates/eshop_bootstrap_v4/components/bitrix/news.list/build_template/style.css?17926621074221 */
